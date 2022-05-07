@@ -16,8 +16,6 @@ function createPage() {
     tabContainer.appendChild(menuTab);
     tabContainer.appendChild(contactTab);
     content.appendChild(heading);
-    content.appendChild(subHeading);
-    content.appendChild(restaurantPhoto);
 }
 
 export {createPage};
