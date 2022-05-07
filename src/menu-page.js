@@ -8,8 +8,14 @@ function createPage() {
 
     heading.textContent = "Menu";
     homeTab.textContent = "Home";
+    homeTab.classList = "tab";
+    homeTab.dataset.pagePointer = "homePage";
     menuTab.textContent = "Menu";
+    menuTab.classList = "tab";
+    menuTab.dataset.pagePointer = "menuPage";
     contactTab.textContent = "Contact";
+    contactTab.classList = "tab";
+    contactTab.dataset.pagePointer = "contactPage";
 
     content.appendChild(tabContainer);
     tabContainer.appendChild(homeTab);

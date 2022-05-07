@@ -4,9 +4,11 @@ import * as contactPage from './contact-page.js';
 
 let pages = {homePage, menuPage, contactPage};
 
-const switchPage = (pageName) => {
+const switchPage = (e) => {
+    const pageName = e.target.dataset.pagePointer;
     clearPage();
     pages[pageName].createPage();
+    addTabEvents();
 }
 
 const clearPage = () => {
@@ -16,3 +18,13 @@ const clearPage = () => {
         content.firstChild.remove();
     }
 }
+
+const addTabEvents = () => {
+    const tabElements = document.querySelectorAll(".tab");
+    tabElements.forEach((tab) => {
+        tab.addEventListener("click", switchPage);
+    });
+}
+
+pages.homePage.createPage();
+addTabEvents();

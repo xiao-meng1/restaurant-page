@@ -12,8 +12,14 @@ function createPage() {
     subHeading.textContent = "The best food innovation since sliced bread!";
     restaurantPhoto.src = "https://media-cdn.tripadvisor.com/media/photo-s/1a/b8/46/6d/london-stock.jpg";
     homeTab.textContent = "Home";
+    homeTab.classList = "tab";
+    homeTab.dataset.pagePointer = "homePage";
     menuTab.textContent = "Menu";
+    menuTab.classList = "tab";
+    menuTab.dataset.pagePointer = "menuPage";
     contactTab.textContent = "Contact";
+    contactTab.classList = "tab";
+    contactTab.dataset.pagePointer = "contactPage";
 
     content.appendChild(tabContainer);
     tabContainer.appendChild(homeTab);
