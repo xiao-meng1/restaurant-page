@@ -27,5 +27,5 @@ const addTabEvents = () => {
     });
 }
 
-pages.homePage.createPage();
+pages.menuPage.createPage();
 addTabEvents();
