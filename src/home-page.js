@@ -1,3 +1,5 @@
+import restaurantPhotoSRC from "./london-stock.jpg";
+
 function createPage() {
     const content = document.querySelector("#content");
     const header = document.createElement("header");
@@ -24,8 +26,8 @@ function createPage() {
     mainContent.classList = "main-content";
     heading.textContent = "Your Favorite Restaurant";
     subHeading.textContent = "The best food innovation since sliced bread!";
-    photoContainer.classList = "photo-container";
-    restaurantPhoto.src = "https://media-cdn.tripadvisor.com/media/photo-s/1a/b8/46/6d/london-stock.jpg";
+    photoContainer.classList = "media-container";
+    restaurantPhoto.src = restaurantPhotoSRC;
     footer.textContent = "Image Source: https://media-cdn.tripadvisor.com/media/photo-s/1a/b8/46/6d/london-stock.jpg"
     footer.classList = "footer";
 

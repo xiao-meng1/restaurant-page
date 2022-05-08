@@ -73,25 +73,28 @@ body {
     background-color: var(--medium-yellow);
 }
 
-.main-content > h1 {
+.main-content h1 {
     font-size: 60px;
 }
 
-.main-content > h2 {
+.main-content h2 {
     font-size: 30px;
 }
 
-.main-content > .photo-container {
+.main-content > .media-container {
+    display: grid;
+    justify-content: center;
     padding: 20px;
+    gap: 10px;
 }
 
-.main-content > .photo-container > img {
-    width: 600px;
+.main-content > .media-container > img {
+    width: 300px;
 }
 
 .footer {
     background-color: var(--light-yellow);
     font-size: 14px;
-    text-align: center;
-    padding: 4px;
+    text-align: left;
+    padding: 6px;
 }
