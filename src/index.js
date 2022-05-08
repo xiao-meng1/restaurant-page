@@ -27,5 +27,14 @@ const addTabEvents = () => {
     });
 }
 
-pages.contactPage.createPage();
-addTabEvents();
+const initializeApp = () => {
+    const content = document.createElement("div");
+    const body = document.querySelector("body");
+
+    content.id = "content";
+    body.appendChild(content);
+    pages.homePage.createPage();
+    addTabEvents();
+}
+
+initializeApp();
