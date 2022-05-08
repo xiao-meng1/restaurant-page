@@ -1,4 +1,4 @@
-import restaurantPhotoSRC from "./london-stock.jpg";
+import restaurantPhotoSRC from "../images/london-stock.jpg";
 
 function createPage() {
     const content = document.querySelector("#content");

@@ -1,6 +1,6 @@
-import eggsPhotoSRC from "./eggs.jpg";
-import potatoesPhotoSRC from "./potatoes.jpg";
-import waterPhotoSRC from "./water.jpg";
+import eggsPhotoSRC from "../images/eggs.jpg";
+import potatoesPhotoSRC from "../images/potatoes.jpg";
+import waterPhotoSRC from "../images/water.jpg";
 
 function createPage() {
     const content = document.querySelector("#content");
